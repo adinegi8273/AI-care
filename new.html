@@ -1,0 +1,315 @@
+<!DOCTYPE HTML>
+<!--
+	Tessellate by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+    <title>Navigation Bar Example</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 15px 30px;
+        }
+
+        .navbar .logo a {
+            color: #fff;
+            font-size: 1.8em;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style-type: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+
+        .nav-links li a:hover {
+            background-color: #ff6347;
+            border-radius: 5px;
+        }
+
+        /* Hamburger Menu (For Mobile) */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30px;
+            height: 21px;
+            cursor: pointer;
+        }
+
+        .hamburger span {
+            background-color: #fff;
+            height: 3px;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                background-color: #333;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                padding: 20px 0;
+                margin: 0;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links li {
+                margin: 10px 0;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+        }
+    </style>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#">AI Care</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Your content goes here -->
+	<body class="is-preload">
+
+		<!-- Header -->
+			<section id="header" class="dark" style="background-color: #d24b67">
+				<header>
+					<h1>Welcome to AI Care</h1>
+					<p>your 24/7 companion for emotional support and mental wellness.</p>
+				</header>
+				<footer>
+					<a href="http://127.0.0.1:5000" class="button scrolly">Start to chat</a>
+				</footer>
+			</section>
+
+		<!-- First -->
+			<section id="first" class="main">
+				<header>
+					<div class="container">
+						<h2>About AI CARE</h2>
+						<p>Our Mental Wellness Application is an AI-powered support system designed to promote emotional well-being and offer instant, judgment-free companionship to individuals navigating life's challenges. Combining the power of natural language processing with mental health-informed design, this application allows users to chat openly, receive uplifting guidance, and access coping strategies 24/7 â€” all from the comfort of their personal device.
+
+Whether you're feeling anxious, overwhelmed, lonely, or simply need someone to talk to, our virtual assistant is here to help. The application respects your privacy, offers personalized interactions based on your mood and tone, and strives to create a calming, encouraging environment every time you reach out.
+
+With a user-friendly interface, sentiment-aware responses, and continual improvements through responsible AI practices, our goal is to empower users to feel heard, supported, and emotionally balanced â€” any time of day.</p>
+					</div>
+				</header>
+				<div class="content dark style1 featured">
+					<div class="container">
+						<div class="row">
+							<div class="col-4 col-12-narrow">
+								<section>
+									<span class="feature-icon"><span class="icon fa-clock"></span></span>
+									<header>
+										<h3>Available 24/7</h3>
+									</header>
+									<p>Our Mental Wellness Application is designed to be there for you anytime, anywhere. We understand that mental health challenges donâ€™t follow a schedule â€” thatâ€™s why our support system operates 24 hours a day, 7 days a week. Whether itâ€™s late at night or during a stressful day, our AI-powered companion is always available to listen, comfort, and guide you. No appointments, no waiting â€” just a safe space at your fingertips, whenever you need it.</p>
+								</section>
+							</div>
+							<div class="col-4 col-12-narrow">
+								<section>
+									<span class="feature-icon"><span class="icon solid fa-bolt"></span></span>
+									<header>
+										<h3>Mood tracking sysytem</h3>
+									</header>
+									<p>Understanding how you feel over time is essential for improving mental well-being. Our application includes an intelligent Mood Tracking feature that allows users to log their emotions daily or during key moments. With just a few taps or words, users can record how they're feeling â€” whether it's happy, anxious, overwhelmed, relaxed, or anything in between.</p>
+								</section>
+							</div>
+							<div class="col-4 col-12-narrow">
+								<section>
+									<span class="feature-icon"><span class="icon solid fa-cloud"></span></span>
+									<header>
+										<h3>Emotionally intelligent Chatbot</h3>
+									</header>
+									<p>At the heart of our application is an emotionally intelligent chatbot designed to do more than just respond â€” it understands. Using advanced natural language processing (NLP) and sentiment analysis, the chatbot interprets not only what users say but how they feel when they say it.
+
+It recognizes emotions like sadness, stress, anger, or joy based on word choice, tone, and context, allowing it to respond with empathy, warmth, and relevance. Whether you're venting frustration or quietly reaching out in distress, the chatbot offers comforting responses, asks thoughtful follow-up questions, or simply listens â€” just like a compassionate friend.</p>
+								</section>
+							</div>
+							<div class="col-12">
+								<footer>
+									<a href="#second" class="button scrolly">More about us</a>
+								</footer>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Second -->
+<section id="second" class="main">
+    <header>
+        <div class="container">
+            <h2>Empowering Mental Wellness with AI</h2>
+            <p>Our AI-driven companion is designed to provide **personalized support**, helping users navigate emotions, reduce stress, and improve overall well-being.</p>
+        </div>
+    </header>
+    <div class="content dark style2">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-12-narrow">
+                    <section>
+                        <h3>24/7 Emotional Support</h3>
+                        <p>Our AI-powered chatbot is available **round the clock** to provide comfort, encouragement, and stress-relief techniques.  
+                        - **Instant Chat Assistance** to express your feelings freely.  
+                        - **Judgment-Free Support** with empathy-driven AI responses.  
+                        - **Guided Relaxation** including breathing exercises and meditation advice.</p>
+                        <footer>
+                            <a href="#chat" class="button scrolly">Start Your Wellness Journey</a>
+                        </footer>
+                    </section>
+                </div>
+                <div class="col-8 col-12-narrow">
+                    <div class="row">
+                        <div class="col-6"><a href="#" class="image fit"><img src="images/header.jpg" alt="" /></a></div>
+						<div class="col-6"><a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a></div>
+						<div class="cnol-6"><a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a></div>
+						<div class="col-6"><a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a></div>
+						<div class="col-6"><a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a></div>
+						<div class="col-6"><a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="third" class="main">
+    <header>
+        <div class="container">
+            <h2>AI-Powered Mental Wellness</h2>
+            <p>Our chatbot delivers **empathetic conversations** and **guided mental wellness tools**, helping users build emotional resilience.</p>
+        </div>
+    </header>
+    <div class="content dark style3">
+        <div class="container">
+            <span class="image featured"><img src="images/header.jpg" alt="Wellness Support" /></span>
+            <div class="row">
+                <div class="col-4 col-12-narrow">
+                    <h3>Emotional Intelligence & Mood Tracking</h3>
+                    <p>Our chatbot recognizes your emotions and provides **tailored support** based on your mood.  
+                    - **Real-time emotion analysis** for meaningful interactions.  
+                    - **Mood tracking system** to monitor well-being over time.  
+                    - **Instant coping strategies** to help manage stress and anxiety.</p>
+                </div>
+                <div class="col-4 col-12-narrow">
+                    <h3>Guided Mental Wellness Resources</h3>
+                    <p>We provide **science-backed strategies** to improve mental health.  
+                    - **Personalized mindfulness exercises** for stress relief.  
+                    - **Interactive self-care routines** to enhance emotional well-being.  
+                    - **Daily positivity affirmations** for motivation and empowerment.</p>
+                </div>
+                <div class="col-4 col-12-narrow">
+                    <h3>Judgment-Free Conversations</h3>
+                    <p>Our chatbot serves as a **non-judgmental companion**, offering comfort and support at any time.  
+                    - **Private & secure conversations** for personal reflection.  
+                    - **Encouraging responses** to uplift and validate emotions.  
+                    - **Instant virtual companionship** for moments of loneliness.</p>
+                    <footer>
+                        <a href="#fourth" class="button scrolly">Explore More Features</a>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="fourth" class="main">
+    <header>
+        <div class="container">
+            <h2>Get in Touch – Your Wellness Matters</h2>
+            <p>Have questions, need guidance, or just want to connect? Our AI-powered support system is here to listen and help.</p>
+        </div>
+    </header>
+    <div class="content style4 featured">
+        <div class="container medium">
+            <form method="post" action="#">
+                <div class="row gtr-50">
+                    <div class="col-6 col-12-mobile"><input type="text" placeholder="Name" /></div>
+                    <div class="col-6 col-12-mobile"><input type="text" placeholder="Email" /></div>
+                    <div class="col-12"><textarea name="message" placeholder="How can we assist you today?"></textarea></div>
+                    <div class="col-12">
+                        <ul class="actions special">
+                            <li><input type="submit" class="button" value="Send Message" /></li>
+                            <li><input type="reset" class="button alt" value="Clear Form" /></li>
+                        </ul>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<section id="footer">
+    <ul class="icons">
+        <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+        <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+        <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+        <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+    </ul>
+    <div class="copyright">
+        <ul class="menu">
+            <li>&copy; AI Care. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        </ul>
+    </div>
+</section>
+    <script src="linkjs.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

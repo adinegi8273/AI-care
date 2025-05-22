@@ -1,0 +1,531 @@
+<!DOCTYPE HTML>
+<!--
+	Tessellate by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar Example</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 15px 30px;
+        }
+
+        .navbar .logo a {
+            color: #fff;
+            font-size: 1.8em;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style-type: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+
+        .nav-links li a:hover {
+            background-color: #ff6347;
+            border-radius: 5px;
+        }
+
+        /* Hamburger Menu (For Mobile) */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30px;
+            height: 21px;
+            cursor: pointer;
+        }
+
+        .hamburger span {
+            background-color: #fff;
+            height: 3px;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                background-color: #333;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                padding: 20px 0;
+                margin: 0;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links li {
+                margin: 10px 0;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#">AI Care</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Your content goes here -->
+
+    <script>
+        // JavaScript for Hamburger Menu
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
+
+	<head>
+		<title>Tessellate by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<section id="header" class="dark">
+				<header>
+					<h1>Welcome to AI Care</h1>
+					<p>your 24/7 companion for emotional support and mental wellness.</p>
+				</header>
+				<footer>
+					<a href="#first" class="button scrolly">Start to chat</a>
+				</footer>
+			</section>
+
+		<!-- First -->
+			<section id="first" class="main">
+				<header>
+					<div class="container">
+						<h2>About AI CARE</h2>
+						<p>Our Mental Wellness Application is an AI-powered support system designed to promote emotional well-being and offer instant, judgment-free companionship to individuals navigating life's challenges. Combining the power of natural language processing with mental health-informed design, this application allows users to chat openly, receive uplifting guidance, and access coping strategies 24/7 — all from the comfort of their personal device.
+
+Whether you're feeling anxious, overwhelmed, lonely, or simply need someone to talk to, our virtual assistant is here to help. The application respects your privacy, offers personalized interactions based on your mood and tone, and strives to create a calming, encouraging environment every time you reach out.
+
+With a user-friendly interface, sentiment-aware responses, and continual improvements through responsible AI practices, our goal is to empower users to feel heard, supported, and emotionally balanced — any time of day.</p>
+					</div>
+				</header>
+				<div class="content dark style1 featured">
+					<div class="container">
+						<div class="row">
+							<div class="col-4 col-12-narrow">
+								<section>
+									<span class="feature-icon"><span class="icon fa-clock"></span></span>
+									<header>
+										<h3>Available 24/7</h3>
+									</header>
+									<p>Our Mental Wellness Application is designed to be there for you anytime, anywhere. We understand that mental health challenges don’t follow a schedule — that’s why our support system operates 24 hours a day, 7 days a week. Whether it’s late at night or during a stressful day, our AI-powered companion is always available to listen, comfort, and guide you. No appointments, no waiting — just a safe space at your fingertips, whenever you need it.</p>
+								</section>
+							</div>
+							<div class="col-4 col-12-narrow">
+								<section>
+									<span class="feature-icon"><span class="icon solid fa-bolt"></span></span>
+									<header>
+										<h3>Mood tracking sysytem</h3>
+									</header>
+									<p>Understanding how you feel over time is essential for improving mental well-being. Our application includes an intelligent Mood Tracking feature that allows users to log their emotions daily or during key moments. With just a few taps or words, users can record how they're feeling — whether it's happy, anxious, overwhelmed, relaxed, or anything in between.</p>
+								</section>
+							</div>
+							<div class="col-4 col-12-narrow">
+								<section>
+									<span class="feature-icon"><span class="icon solid fa-cloud"></span></span>
+									<header>
+										<h3>Emotionally intelligent Chatbot</h3>
+									</header>
+									<p>At the heart of our application is an emotionally intelligent chatbot designed to do more than just respond — it understands. Using advanced natural language processing (NLP) and sentiment analysis, the chatbot interprets not only what users say but how they feel when they say it.
+
+It recognizes emotions like sadness, stress, anger, or joy based on word choice, tone, and context, allowing it to respond with empathy, warmth, and relevance. Whether you're venting frustration or quietly reaching out in distress, the chatbot offers comforting responses, asks thoughtful follow-up questions, or simply listens — just like a compassionate friend.</p>
+								</section>
+							</div>
+							<div class="col-12">
+								<footer>
+									<a href="#second" class="button scrolly">More about us</a>
+								</footer>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Second -->
+			<section id="second" class="main">
+				<header>
+					<div class="container">
+						<h2>Euismod sed feugiat lorem tempus magna</h2>
+						<p>Gravida dis placerat lectus ante vel nunc euismod eget ornare varius gravida euismod lorem ipsum dolor sit amet consequat<br />
+						feugiat. Gravida dis placerat lectus ante vel nunc euismod eget ornare varius gravida euismod lorem ipsum dolor sit amet.</p>
+					</div>
+				</header>
+				<div class="content dark style2">
+					<div class="container">
+						<div class="row">
+							<div class="col-4 col-12-narrow">
+								<section>
+									<h3>Augue vivamus sed ipsum commodo lorem dolor</h3>
+									<p>Gravida dis placerat lectus ante vel nunc euismod est turpis sodales. Diam
+									tempor dui lacinia eget ornare varius gravida. Gravida dis placerat lectus ante
+									vel nunc euismod est turpis sodales. Diam tempor dui lacinia accumsan vivamus
+									augue cubilia vivamus nisi eu eget ornare varius gravida euismod.  Gravida dis
+									lorem ipsum dolor placerat magna tempus feugiat.</p>
+									<p>Lectus ante vel nunc euismod est turpis sodales. Diam tempor dui lacinia
+									accumsan vivamus augue cubilia vivamus nisi eu eget ornare varius gravida dolore
+									euismod lorem ipsum dolor.</p>
+									<footer>
+										<a href="#third" class="button scrolly">Accumsan nisi tempor</a>
+									</footer>
+								</section>
+							</div>
+							<div class="col-8 col-12-narrow">
+								<div class="row">
+									<div class="col-6"><a href="#" class="image fit"><img src="images/header.jpg" alt="" /></a></div>
+									<div class="col-6"><a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a></div>
+									<div class="col-6"><a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a></div>
+									<div class="col-6"><a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a></div>
+									<div class="col-6"><a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a></div>
+									<div class="col-6"><a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Third -->
+			<section id="third" class="main">
+				<header>
+					<div class="container">
+						<h2>Ornare varius lorem ipsum ante lectus</h2>
+						<p>Gravida dis placerat lectus ante vel nunc euismod eget ornare varius gravida euismod lorem ipsum dolor sit amet consequat<br />
+						feugiat. Gravida dis placerat lectus ante vel nunc euismod eget ornare varius gravida euismod lorem ipsum dolor sit amet.</p>
+					</div>
+				</header>
+				<div class="content dark style3">
+					<div class="container">
+						<span class="image featured"><img src="images/pic07.jpg" alt="" /></span>
+						<div class="row">
+							<div class="col-4 col-12-narrow">
+								<h3>Diam vivamus turpis lorem sodales lectus ornare</h3>
+								<p>Gravida dis placerat lectus ante vel nunc euismod est turpis sodales. Diam
+								tempor dui lacinia eget ornare varius gravida. Gravida dis placerat lectus ante
+								vel nunc euismod est turpis sodales. Diam tempor dui lacinia accumsan vivamus
+								augue cubilia vivamus nisi eu eget ornare varius gravida euismod.  Gravida dis
+								lorem ipsum dolor placerat magna tempus feugiat.</p>
+								<p>Lectus ante vel nunc euismod est turpis sodales. Diam tempor dui lacinia
+								accumsan vivamus augue cubilia vivamus nisi eu eget ornare varius gravida dolore
+								euismod lorem ipsum dolor sit amet consequat. vivamus nisi eu eget ornare varius
+								gravida dolore euismod lorem ipsum dolor sit amet consequat. vivamus nisi eu
+								eget ornare et magna.</p>
+							</div>
+							<div class="col-4 col-12-narrow">
+								<p>Gravida dis placerat lectus ante vel nunc euismod est turpis sodales. Diam
+								tempor dui lacinia eget ornare varius gravida. Gravida dis placerat lectus ante
+								vel nunc euismod est turpis sodales. Diam tempor dui lacinia accumsan vivamus
+								augue cubilia vivamus nisi eu eget ornare varius gravida euismod.  Gravida dis
+								lorem ipsum dolor placerat magna tempus feugiat.</p>
+								<p>Lectus ante vel nunc euismod est turpis sodales. Diam tempor dui lacinia
+								accumsan vivamus augue cubilia vivamus nisi eu eget ornare varius gravida dolore
+								euismod lorem ipsum dolor sit amet consequat eget ornare varius gravida euismod.
+								Gravida dis lorem ipsum dolor placerat magna tempus feugiat magna tempus lorem.</p>
+								<p>Lectus ante vel nunc euismod est turpis sodales. Diam tempor dui lacinia
+								accumsan vivamus augue cubilia.</p>
+							</div>
+							<div class="col-4 col-12-narrow">
+								<p>Placerat lectus ante vel nunc euismod est turpis sodales. Diam tempor dui
+								lacinia eget ornare varius gravida. Gravida dis placerat lectus ante vel nunc
+								euismod est turpis sodales. Diam tempor dui lacinia accumsan vivamus augue
+								cubilia vivamus nisi eu eget ornare varius gravida euismod.  Gravida dis
+								lorem ipsum dolor placerat magna tempus feugiat. Lectus ante vel nunc euismod
+								est turpis sodales. Diam tempor dui lacinia dolore.</p>
+								<p>Accumsan vivamus augue cubilia vivamus nisi eu eget ornare varius gravida
+								dolore euismod lorem ipsum dolor sit amet conseismod lorem ipsum dolor sit amet
+								consequat lorem ipsum consequat feugiat sed tempus euismod feugiat veroeros.</p>
+								<footer>
+									<a href="#fourth" class="button scrolly">Ipsum ornare lorem dolor</a>
+								</footer>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		
+			<section class="main">
+				<header>
+					<div class="container">
+						<h2>A Whole Lotta Elements</h2>
+						<p>General purpose elements for every general purpose. Or something like that.</p>
+					</div>
+				</header>
+				<div class="content style1 dark">
+					<div class="container">
+						<section>
+							<header>
+								<h3>Paragraph</h3>
+								<p>This is a byline</p>
+							</header>
+							<p>Phasellus nisl nisl, varius id <sup>porttitor sed pellentesque</sup> ac orci. Pellentesque
+							habitant <strong>strong</strong> tristique <b>bold</b> et netus <i>italic</i> malesuada <em>emphasized</em> ac turpis egestas. Morbi
+							leo suscipit ut. Praesent <sub>id turpis vitae</sub> turpis pretium ultricies. Vestibulum sit
+							amet risus elit.</p>
+						</section>
+						<section>
+							<header>
+								<h3>Blockquote</h3>
+							</header>
+							<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget.
+							tempus euismod. Vestibulum ante ipsum primis in faucibus. Cras sit amet urna eros, id egestas
+							tempus ante ipsum primis in faucibus orci luctus et ultrices.</blockquote>
+						</section>
+						<section>
+							<header>
+								<h3>Divider</h3>
+							</header>
+							<p>Donec consectetur <a href="#">vestibulum dolor et pulvinar</a>. Etiam vel felis enim, at viverra
+							ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel. Praesent nec orci
+							facilisis leo magna. Cras sit amet urna eros, id egestas urna. Quisque aliquam
+							tempus euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+							posuere cubilia.</p>
+							<hr />
+							<p>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra
+							ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel. Praesent nec orci
+							facilisis leo magna. Cras sit amet urna eros, id egestas urna. Quisque aliquam
+							tempus euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+							posuere cubilia.</p>
+						</section>
+						<section>
+							<header>
+								<h3>Unordered List</h3>
+							</header>
+							<ul class="default">
+								<li>Donec consectetur vestibulum dolor et vel felis enim at viverra ligula. Ut porttitor sagittis lorem.</li>
+								<li>Donec consectetur vestibulum dolor et vel felis enim at viverra ligula. Ut porttitor sagittis lorem.</li>
+								<li>Donec consectetur vestibulum dolor et vel felis enim at viverra ligula. Ut porttitor sagittis lorem.</li>
+								<li>Donec consectetur vestibulum dolor et vel felis enim at viverra ligula. Ut porttitor sagittis lorem.</li>
+							</ul>
+						</section>
+						<section>
+							<header>
+								<h3>Ordered List</h3>
+							</header>
+							<ol class="default">
+								<li>Donec consectetur vestibulum dolor et vel felis enim at viverra ligula. Ut porttitor sagittis lorem.</li>
+								<li>Donec consectetur vestibulum dolor et vel felis enim at viverra ligula. Ut porttitor sagittis lorem.</li>
+								<li>Donec consectetur vestibulum dolor et vel felis enim at viverra ligula. Ut porttitor sagittis lorem.</li>
+								<li>Donec consectetur vestibulum dolor et vel felis enim at viverra ligula. Ut porttitor sagittis lorem.</li>
+							</ol>
+						</section>
+						<section>
+							<header>
+								<h3>Table</h3>
+							</header>
+							<div class="table-wrapper">
+								<table class="default">
+									<thead>
+										<tr>
+											<th>ID</th>
+											<th>Name</th>
+											<th>Description</th>
+											<th>Price</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>00001</td>
+											<td>Lorem ipsum dolor</td>
+											<td>Ut porttitor sagittis lorem quis nisi ornare.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>00002</td>
+											<td>Sit amet nullam</td>
+											<td>Ut porttitor sagittis lorem quis nisi ornare.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>00003</td>
+											<td>Feugiat felis viverra</td>
+											<td>Ut porttitor sagittis lorem quis nisi ornare.</td>
+											<td>29.99</td>
+										</tr>
+										<tr>
+											<td>00004</td>
+											<td>Sagittis enim felis</td>
+											<td>Ut porttitor sagittis lorem quis nisi ornare.</td>
+											<td>19.99</td>
+										</tr>
+										<tr>
+											<td>00005</td>
+											<td>Nullam sed vestibulum</td>
+											<td>Ut porttitor sagittis lorem quis nisi ornare.</td>
+											<td>19.99</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<td colspan="3"></td>
+											<td>100.00</td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+						</section>
+						<section>
+							<header>
+								<h3>Form</h3>
+							</header>
+							<form method="post" action="#">
+								<div class="row gtr-50">
+									<div class="col-6 col-12-narrow">
+										<input type="text" name="name" id="name" value="" placeholder="John Doe" />
+									</div>
+									<div class="col-6 col-12-narrow">
+										<input type="text" name="email" id="email" value="" placeholder="johndoe@domain.tld" />
+									</div>
+									<div class="col-12">
+										<div class="select" tabindex="-1">
+											<select name="department" id="department">
+												<option value="">Choose a department</option>
+												<option value="1">Manufacturing</option>
+												<option value="2">Administration</option>
+												<option value="3">Support</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-12">
+										<input type="text" name="subject" id="subject" value="" placeholder="Enter your subject" />
+									</div>
+									<div class="col-12">
+										<textarea name="message" id="message" placeholder="Enter your message"></textarea>
+									</div>
+									<div class="col-12">
+										<ul class="actions">
+											<li><input type="submit" class="button" value="Send Message" /></li>
+											<li><input type="reset" class="button alt" value="Clear Form" /></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+						</section>
+					</div>
+				</div>
+			</section>
+		-->
+
+		
+			<section id="fourth" class="main">
+				<header>
+					<div class="container">
+						<h2>Sed feugiat ipsum consequat</h2>
+						<p>Gravida dis placerat lectus ante vel nunc euismod eget ornare varius gravida euismod lorem ipsum dolor sit amet consequat<br />
+						feugiat. Gravida dis placerat lectus ante vel nunc euismod eget ornare varius gravida euismod lorem ipsum dolor sit amet.</p>
+					</div>
+				</header>
+				<div class="content style4 featured">
+					<div class="container medium">
+						<form method="post" action="#">
+							<div class="row gtr-50">
+								<div class="col-6 col-12-mobile"><input type="text" placeholder="Name" /></div>
+								<div class="col-6 col-12-mobile"><input type="text" placeholder="Email" /></div>
+								<div class="col-12"><textarea name="message" placeholder="Message"></textarea></div>
+								<div class="col-12">
+									<ul class="actions special">
+										<li><input type="submit" class="button" value="Send Message" /></li>
+										<li><input type="reset" class="button alt" value="Clear Form" /></li>
+									</ul>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<section id="footer">
+				<ul class="icons">
+					<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+					<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+					<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+				</ul>
+				<div class="copyright">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</section>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

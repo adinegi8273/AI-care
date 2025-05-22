@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Mental Chatbot Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar (Left) -->
+        <aside>
+            <h2>AI Mental Chatbot</h2>
+            <nav>
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Users</a></li>
+                    <li><a href="#">Mood Analysis</a></li>
+                    <li><a href="#">Chat History</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Dashboard (Center) -->
+        <main>
+            <h1>Dashboard Overview</h1>
+
+            <!-- Mood Analysis Chart -->
+            <canvas id="moodChart"></canvas>
+
+            <!-- Chatbot Interaction Statistics -->
+            <div class="stats">
+                <div class="card">
+                    <h3>Total Users</h3>
+                    <p id="userCount">Loading...</p>
+                </div>
+                <div class="card">
+                    <h3>Chat Sessions Today</h3>
+                    <p id="chatCount">Loading...</p>
+                </div>
+                <div class="card">
+                    <h3>Average Mood Score</h3>
+                    <p id="moodScore">Loading...</p>
+                </div>
+            </div>
+        </main>
+
+        <!-- User Details Panel (Right) -->
+        <section class="user-panel">
+            <h2>User Details</h2>
+            <div class="user-info">
+                <p><strong>Name:</strong> <span id="userName">Loading...</span></p>
+                <p><strong>Age:</strong> <span id="userAge">Loading...</span></p>
+                <p><strong>Mood Today:</strong> <span id="userMood">Loading...</span></p>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
